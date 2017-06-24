@@ -100,3 +100,65 @@ header p {
     border: 1px solid white;
     color: white;
 }
+
+#section1 {
+    width: 1920px;
+    height: 616px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#section1 h2 {
+    font-family: Raleway;
+    color: black;
+    font-size: 36px;/* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 100px;/* Approximation due to font substitution */
+    text-align: left;
+    margin-left: 607px;
+    margin-top: 258px;
+} 
+
+#section1 h3 {
+    font-family: PlayfairDisplay;
+    color: #29d9c3;
+    font-size: 24px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 19px;/* Approximation due to font substitution */
+    text-align: center;
+}
+
+#section1 p {
+    font-family: PlayfairDisplay;
+    color: #a1b1bc;
+    font-size: 24px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 40px;/* Approximation due to font substitution */
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    width: 1920px;
+    height: 120px;
+    background-color: #1a1c27;
+}
+
+footer p {
+    margin-top: 37px;
+    font-family: Lato;
+    color: #a1b1bc;
+    font-size: 18px;/* Approximation due to font substitution */
+    font-weight: 700;
+    line-height: 30px;/* Approximation due to font substitution */
+    text-align: center;
+}
+
+footer p span {
+    font-family: FontAwesome;
+    color: #29d9c3;
+    font-size: 18px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 30px;/* Approximation due to font substitution */
+    text-align: center;
+}

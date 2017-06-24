@@ -71,3 +71,27 @@ header p {
     margin-left: 375px;
     margin-top: 596px;
 }
+
+/* botton property as bootstrap */
+.btn_cool {
+    display: inline-block;
+    width: 220px;
+    height: 37px;
+    text-align: center;
+    padding: 21px 0px 0px 0px;
+    margin-right: 18px;
+    font-family: Raleway;
+    text-decoration: none;
+}
+
+/* Background for buttons */
+.white {
+    background-color: white;
+    color: black;
+}
+
+.transparent {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}

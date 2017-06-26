@@ -126,7 +126,7 @@ header p {
     font-size: 36px;/* Approximation due to font substitution */
     font-weight: 700;
     line-height: 100px;/* Approximation due to font substitution */
-    text-align: left;
+    text-align: center;
     
     margin: 0;
 } 
@@ -152,6 +152,13 @@ header p {
 #prefooter {
     background-color: rgba(170, 194, 193, 0.4);
     height: 980px;
+    padding-top: 450px;
+    box-sizing: border-box;
+}
+
+#prefooter a {
+    margin-left: 497px;
+    margin-top: 49px;
 }
 
 #prefooter p {
@@ -167,6 +174,8 @@ header p {
 footer {
     height: 120px;
     background-color: #1a1c27;
+    padding-top: 37px;
+    box-sizing: border-box;
 }
 
 footer p {
@@ -247,7 +256,7 @@ footer p span {
     height: 340px;
 }
 
-.section3 div {
+.to_the_right {
     float: right;
 }
 
@@ -265,6 +274,8 @@ footer p span {
 #section7 {
     background-color: #222533;
     height: 960px;
+    padding-top: 351px;
+    box-sizing: border-box;
 }
 
 
@@ -276,9 +287,23 @@ footer p span {
     line-height: 19px;/* Approximation due to font substitution */
     text-align: left;
     margin: 0;
+    text-align: center;
 }
 #section7 p.p1 span {
     color: #29d9c3;
+}
+
+#section7 p.p3 {
+    font-family: Lato;
+    color: #a1b1bc;
+    font-size: 14px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px;/* Approximation due to font substitution */
+    text-align: center;
+}
+
+#section7 p.p3 span {
+    color: #ffffff;
 }
 
 #section7 p.p2 {
@@ -287,5 +312,5 @@ footer p span {
     font-size: 24px;/* Approximation due to font substitution */
     font-weight: 400;
     line-height: 19px;/* Approximation due to font substitution */
-    text-align: left;
+    text-align: center;
 }

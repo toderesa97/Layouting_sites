@@ -8,9 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         
-
+        <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/styles.css">
+        
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -22,7 +25,7 @@
         <nav>
            <div class="wrapper">
                 <img class="logo_fox" src="assets/img/Logotipo%20de%20The%20Fox.png" alt="Logo of company, a fox">
-                <ul class="menu">
+                <ul id="menu">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">PORTFOLIO</a></li>
                     <li><a href="#">PAGE</a></li>
@@ -32,7 +35,12 @@
                     <li><a href="#">FEATURES</a></li>
                     <li><a href="#">CONTACT</a></li>
                 </ul>
+                <div id="menu_btn">
+                    <label for="checkbox" class="checkbox">MENU</label>
+                    <input type="checkbox" id="checkbox" role="button">
+                </div>
             </div>
+            
         </nav>
 
         <header>

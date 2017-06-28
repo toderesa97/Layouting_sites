@@ -1,16 +1,7 @@
-@font-face {
-    font-family: Raleway;
-    src: url('https://fonts.google.com/specimen/Raleway');
-}
-
-@font-face {
-    font-family: PlayfairDisplay;
-    src: url('https://fonts.google.com/specimen/Playfair+Display');
-}
-
-@font-face {
-    font-family: PlayfairDisplay;
-    src: url('https://fonts.google.com/specimen/Lato');
+/* Fallback regarded */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper {
@@ -25,6 +16,8 @@ nav {
     padding-top: 30px;
     padding-bottom: 49px;
     box-sizing: border-box;
+    position: fixed;
+    width: 100%;
 }
 
 nav ul li {
@@ -38,6 +31,10 @@ nav ul li a {
     
 }
 
+#menu_btn {
+    display: none;
+}
+
 nav ul li a:hover {
     color: #29d9c3;
     
@@ -45,7 +42,10 @@ nav ul li a:hover {
 
 nav ul {
     list-style: none;
-    display: inline-block;
+    float: right;
+    padding-right: 256px;
+    padding-left: 0px;
+    padding-top: 4px;
 }
 
 
@@ -58,12 +58,13 @@ header {
 }
 
 header h1 {
-    font-family: Raleway;
+    font-family: Raleway, Arial;
     color: #ffffff;
     font-size: 90px;/* Approximation due to font substitution */
-    font-weight: 800;
+    font-weight: bold;
     line-height: 100px;/* Approximation due to font substitution */
     text-align: left;
+    margin: 0;
 }
 
 header h1 span {
@@ -71,12 +72,15 @@ header h1 span {
 }
 
 header p {
-    font-family: PlayfairDisplay;
+    font-family: 'Playfair Display', Arial;
     color: #ffffff;
     font-size: 36px;/* Approximation due to font substitution */
     font-weight: 400;
     line-height: 19px;/* Approximation due to font substitution */
     text-align: left;
+    margin: 0;
+    padding-top: 41px;
+    padding-bottom: 49px;
 }
 
 
@@ -87,8 +91,8 @@ header p {
     height: 37px;
     text-align: center;
     padding: 21px 0px 0px 0px;
-    margin-right: 18px;
-    font-family: Raleway;
+    margin-right: 21px;
+    font-family: Raleway, Arial;
     text-decoration: none;
 }
 
@@ -121,32 +125,34 @@ header p {
 }
 
 #section1 h2 {
-    font-family: Raleway;
+    font-family: Raleway, Arial;
     color: black;
     font-size: 36px;/* Approximation due to font substitution */
     font-weight: 700;
     line-height: 100px;/* Approximation due to font substitution */
     text-align: center;
-    
+    padding-top: 149px;
     margin: 0;
 } 
 
 #section1 h3 {
-    font-family: PlayfairDisplay;
+    font-family: 'Playfair Display', Arial;
     color: #29d9c3;
     font-size: 24px;/* Approximation due to font substitution */
     font-weight: 400;
     line-height: 19px;/* Approximation due to font substitution */
     text-align: center;
+    margin: 0;
 }
 
 #section1 p {
-    font-family: PlayfairDisplay;
+    font-family: 'Playfair Display', Arial;
     color: #a1b1bc;
     font-size: 24px;/* Approximation due to font substitution */
     font-weight: 400;
     line-height: 40px;/* Approximation due to font substitution */
     text-align: center;
+    margin-top: 69px;
 }
 
 #prefooter {
@@ -162,7 +168,7 @@ header p {
 }
 
 #prefooter p {
-    font-family: Raleway;
+    font-family: Raleway, Arial;
     color: #ffffff;
     font-size: 90px;/* Approximation due to font substitution */
     font-weight: 800;
@@ -179,8 +185,7 @@ footer {
 }
 
 footer p {
-    
-    font-family: Lato;
+    font-family: Lato, Arial;
     color: #a1b1bc;
     font-size: 18px;/* Approximation due to font substitution */
     font-weight: 700;
@@ -190,7 +195,7 @@ footer p {
 }
 
 footer p span {
-    font-family: FontAwesome;
+    font-family: FontAwesome, Arial;
     color: #29d9c3;
     font-size: 18px;/* Approximation due to font substitution */
     font-weight: 400;
@@ -201,7 +206,7 @@ footer p span {
 .section2 {
     height: 1080px;
     background-color: #66cddf;
-    padding-top: 348px;
+    padding-top: 350px;
     box-sizing: border-box;
 }
 
@@ -209,39 +214,41 @@ footer p span {
     float: left;
 }
 .section2 h2 {
-    font-family: Raleway;
+    font-family: Raleway, Arial;
     color: #ffffff;
     font-size: 72px;/* Approximation due to font substitution */
     font-weight: 700;
-    line-height: 100px;/* Approximation due to font substitution */
     text-align: left;
     margin: 0;
 }
 
+
 .section2 p.p1 {
-    font-family: PlayfairDisplay;
+    font-family: 'Playfair Display', Arial;
     color: #ffffff;
     font-size: 24px;/* Approximation due to font substitution */
     font-weight: 400;
     line-height: 19px;/* Approximation due to font substitution */
     text-align: left;
+    padding-top: 37px;
 }
 
 .section2 p.p2 {
-    font-family: Lato;
+    font-family: Lato, Arial;
     color: #ffffff;
     font-size: 14px;/* Approximation due to font substitution */
     font-weight: 400;
     line-height: 24px;/* Approximation due to font substitution */
     text-align: left;
+    padding-bottom: 25px;
 
 }
-
 
 .section2 img {
     width: 510px;
     height: 340px;
     float: right;
+    padding-top: 13px;
 }
 
 .section3 {
@@ -254,6 +261,29 @@ footer p span {
 .section3 img {
     width: 510px;
     height: 340px;
+    padding-top: 24px;
+}
+
+.section3 p.p2 {
+    font-family: PlayfairDisplay;
+    color: #a1b1bc;
+    font-size: 24px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 19px;/* Approximation due to font substitution */
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.section3 p.p3 {
+    font-family: Lato;
+    color: #a1b1bc;
+    font-size: 14px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px;/* Approximation due to font substitution */
+    text-align: left;
+    margin: 0;
+    padding-top: 63px;
+    padding-bottom: 29px;
 }
 
 .to_the_right {
@@ -262,7 +292,7 @@ footer p span {
 
 
 .section3 p.p1 {
-    font-family: Raleway;
+    font-family: Raleway, Arial;
     color: rgba(47, 41, 51, 0.5);
     font-size: 72px;/* Approximation due to font substitution */
     font-weight: 700;
@@ -280,7 +310,7 @@ footer p span {
 
 
 #section7 p.p1 {
-    font-family: Raleway;
+    font-family: Raleway, Arial;
     color: #ffffff;
     font-size: 88.97px;/* Approximation due to font substitution */
     font-weight: 800;
@@ -288,13 +318,15 @@ footer p span {
     text-align: left;
     margin: 0;
     text-align: center;
+    padding-bottom: 27px;
 }
 #section7 p.p1 span {
     color: #29d9c3;
+    font-family: Lato;
 }
 
 #section7 p.p3 {
-    font-family: Lato;
+    font-family: Lato, Arial;
     color: #a1b1bc;
     font-size: 14px;/* Approximation due to font substitution */
     font-weight: 400;
@@ -307,10 +339,55 @@ footer p span {
 }
 
 #section7 p.p2 {
-    font-family: PlayfairDisplay;
+    font-family: 'Playfair Display', Arial;
     color: #ffffff;
     font-size: 24px;/* Approximation due to font substitution */
     font-weight: 400;
     line-height: 19px;/* Approximation due to font substitution */
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 67px;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox]:checked ~ nav ul {
+	display: block;
+}
+
+/* Responsive design for mobiles */
+@media only screen and (max-width: 500px) {
+    .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+    
+    nav {
+        position: fixed;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav img {
+        width: 150px;
+        padding-top: 5px;
+        float: left;
+        margin-left: 32px;
+    }
+    
+    #menu_btn {
+        display: inline-block;
+        margin-top: 13px;
+    }
+    
+    label {
+        display: inline-block;
+        background-color: aqua;
+        margin-left: 110px;
+        padding: 5px;
+    }
 }

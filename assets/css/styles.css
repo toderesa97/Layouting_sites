@@ -1,9 +1,4 @@
 /* Fallback regarded */
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .wrapper {
     width: 1170px;
     margin: 0 auto;
@@ -13,44 +8,39 @@ nav {
     background-color: #ffffff;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
     height: 109px;
-    padding-top: 30px;
-    padding-bottom: 49px;
     box-sizing: border-box;
-    position: fixed;
     width: 100%;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    margin: 0 5px;
+}
+
+nav div div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav div div ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
 }
 
 nav ul li a {
     text-decoration: none;
     color: black;
-    
+    font-family: Lato;
+    font-size: 13px;/* Approximation due to font substitution */
+    font-weight: 900;
 }
 
 #menu_btn {
     display: none;
 }
 
-nav ul li a:hover {
-    color: #29d9c3;
-    
-}
-
-nav ul {
-    list-style: none;
-    float: right;
-    padding-right: 256px;
-    padding-left: 0px;
-    padding-top: 4px;
-}
-
 
 header {
-    padding-top: 324px;
     height: 980px;
     background-image: url('../img/back.jpg');
     background-size: cover;
@@ -118,25 +108,24 @@ header p {
     color: white;
 }
 
-#section1 {
+.section1 {
     height: 507px;
     background-color: #ffffff;
     text-align: center;
+    font-family: 'Playfair Display', Arial;
 }
 
-#section1 h2 {
+.section1 h2 {
     font-family: Raleway, Arial;
     color: black;
     font-size: 36px;/* Approximation due to font substitution */
     font-weight: 700;
     line-height: 100px;/* Approximation due to font substitution */
     text-align: center;
-    padding-top: 149px;
     margin: 0;
 } 
 
-#section1 h3 {
-    font-family: 'Playfair Display', Arial;
+.section1 h3 {
     color: #29d9c3;
     font-size: 24px;/* Approximation due to font substitution */
     font-weight: 400;
@@ -145,8 +134,7 @@ header p {
     margin: 0;
 }
 
-#section1 p {
-    font-family: 'Playfair Display', Arial;
+.section1 p {
     color: #a1b1bc;
     font-size: 24px;/* Approximation due to font substitution */
     font-weight: 400;
@@ -155,19 +143,20 @@ header p {
     margin-top: 69px;
 }
 
-#prefooter {
+
+
+.prefooter {
     background-color: rgba(170, 194, 193, 0.4);
     height: 980px;
-    padding-top: 450px;
     box-sizing: border-box;
 }
 
-#prefooter a {
+.prefooter a {
     margin-left: 497px;
     margin-top: 49px;
 }
 
-#prefooter p {
+.prefooter p {
     font-family: Raleway, Arial;
     color: #ffffff;
     font-size: 90px;/* Approximation due to font substitution */
@@ -180,7 +169,6 @@ header p {
 footer {
     height: 120px;
     background-color: #1a1c27;
-    padding-top: 37px;
     box-sizing: border-box;
 }
 
@@ -194,8 +182,8 @@ footer p {
     margin: 0;
 }
 
-footer p span {
-    font-family: FontAwesome, Arial;
+footer span {
+    font-family: font-awesome, Arial;
     color: #29d9c3;
     font-size: 18px;/* Approximation due to font substitution */
     font-weight: 400;
@@ -206,13 +194,9 @@ footer p span {
 .section2 {
     height: 1080px;
     background-color: #66cddf;
-    padding-top: 350px;
     box-sizing: border-box;
 }
 
-.to_the_left {
-    float: left;
-}
 .section2 h2 {
     font-family: Raleway, Arial;
     color: #ffffff;
@@ -221,7 +205,6 @@ footer p span {
     text-align: left;
     margin: 0;
 }
-
 
 .section2 p.p1 {
     font-family: 'Playfair Display', Arial;
@@ -254,7 +237,6 @@ footer p span {
 .section3 {
     background-color: #ffffff;
     height: 1080px;
-    padding-top: 348px;
     box-sizing: border-box;
 }
 
@@ -282,14 +264,9 @@ footer p span {
     line-height: 24px;/* Approximation due to font substitution */
     text-align: left;
     margin: 0;
-    padding-top: 63px;
+    padding-top: 39px;
     padding-bottom: 29px;
 }
-
-.to_the_right {
-    float: right;
-}
-
 
 .section3 p.p1 {
     font-family: Raleway, Arial;
@@ -301,15 +278,21 @@ footer p span {
     margin: 0;
 }
 
-#section7 {
+.section7 {
     background-color: #222533;
     height: 960px;
-    padding-top: 351px;
     box-sizing: border-box;
 }
 
+.flex_box {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
 
-#section7 p.p1 {
+.section7 p.p1 {
     font-family: Raleway, Arial;
     color: #ffffff;
     font-size: 88.97px;/* Approximation due to font substitution */
@@ -320,12 +303,12 @@ footer p span {
     text-align: center;
     padding-bottom: 27px;
 }
-#section7 p.p1 span {
+.section7 p.p1 span {
     color: #29d9c3;
     font-family: Lato;
 }
 
-#section7 p.p3 {
+.section7 p.p3 {
     font-family: Lato, Arial;
     color: #a1b1bc;
     font-size: 14px;/* Approximation due to font substitution */
@@ -334,11 +317,11 @@ footer p span {
     text-align: center;
 }
 
-#section7 p.p3 span {
+.section7 p.p3 span {
     color: #ffffff;
 }
 
-#section7 p.p2 {
+.section7 p.p2 {
     font-family: 'Playfair Display', Arial;
     color: #ffffff;
     font-size: 24px;/* Approximation due to font substitution */
@@ -346,14 +329,15 @@ footer p span {
     line-height: 19px;/* Approximation due to font substitution */
     text-align: center;
     margin-bottom: 0;
-    padding-bottom: 67px;
+    padding-bottom: 53px;
+    margin-top: 13px;
 }
 
 input[type=checkbox] {
-	display: none;
+	display: inline-block;
 }
 
-input[type=checkbox]:checked ~ nav ul {
+input[type=checkbox]:checked nav ul {
 	display: block;
 }
 
@@ -364,12 +348,10 @@ input[type=checkbox]:checked ~ nav ul {
         margin: 0;
     }
     
-    nav {
-        position: fixed;
-    }
-    
     nav ul {
-        display: none;
+        display: block;
+        background-color: white;
+        line-height: 5px;
     }
     
     nav img {
